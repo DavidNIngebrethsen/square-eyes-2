@@ -1,0 +1,48 @@
+:root {
+    --bright-color: #999;
+    --active-color: #ccc;
+    --medium-color: #555;
+    --action-color: #33c;
+    --dark-color: #333;
+    --positive-color: #3b3;
+    --negative-color: #c33;
+}
+* {box-sizing: border-box;}
+body {
+    margin: 0;
+    background-color: var(--dark-color);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--medium-color);
+    border: 2px solid --dark-color;
+}
+.logo {
+    height: 5rem;
+    padding: 0.5rem;
+    background-color: var(--bright-color);
+    background-size: cover;
+    border: 2px solid var(--dark-color);
+    border-radius: 0.25rem;
+}
+.logo-img {height: 4rem;}
+.mobilemenu {
+    margin: 0.5rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: var(--bright-color);
+    border: 2px solid var(--dark-color);
+}
+.fa-bars {
+    text-align: center;
+    color: var(--dark-color);
+    padding: 0.625rem;
+    width: 100%;
+    font-size: 2.5rem;
+}
+.dsktoptabs {display: none;}
+
+.button:hover {background-color: var(--active-color);}
