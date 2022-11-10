@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Square Eyes - About</title>
-    <meta name="Square Eyes About" content="About page of Square Eyes website.">
+    <title>Square Eyes - Purchase</title>
+    <meta name="Square Eyes Purchase page" content="Page dedicated to handling purchases.">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/e56bb99359.js" crossorigin="anonymous"></script>
 </head>
@@ -75,20 +75,55 @@
         </div>
     </header>
 
-    <main class="textbody">
-        <h1 class="text-on-dark">About us</h1>
-            <div class="text-on-dark contact-about">
-            <p class="bold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis asperiores ab ipsa nisi amet voluptatibus reiciendis magnam veniam a vero vitae eaque recusandae libero, voluptatem facilis labore assumenda fugiat maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora omnis excepturi corporis repellat asperiores reprehenderit eos fugit magnam. Ad quasi similique aliquam mollitia hic quos consequuntur sunt nihil magni?
-            </p>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae reprehenderit voluptatibus id aperiam aliquam, nemo, doloribus nihil recusandae excepturi dolor temporibus consequuntur, aspernatur saepe ducimus voluptate maiores totam praesentium.
-            </p>
+    <main class="purchase-page">
+        <h1>Checkout</h1>
+        <div class="payment-input flex">
+            <form action="" class="input-form">
+                <input type="text" name="Name on card" placeholder="Name on card" class="input-full input-field">
+                <br>
+                <br>
+                <input type="text" name="Card Number" placeholder="Card number" class="input-full input-field">
+                <br>
+                <br>
+                <input type="text" name="Expiry date" placeholder="Expiry date" class="input-half input-field"><input type="text" name="CVV code" placeholder="CSS code" class="input-half input-field">
+                <br>
+                <br>
+                <input type="text" name="ZIP/Postal code" placeholder="ZIP/Postal code" class="input-full input-field">
+            </form>
+        </div>
+        
+        <div class="purchase-container flex">
+            <h1>$XX.xx</h1>
+            <label for="success-toggle">
+                <div class="action-button flex">
+                    <h2>Confirm</h2>
+                </div>
+            </label>
+        </div>
+        <input type="checkbox" id="success-toggle">
+        <div class="success-overlay">
+            <div class="success-body">
+                <h1>Purchase successful</h1>
+                <h2>You have purchased [Movie]</h2>
+                <p>Your receipt code is:</p>
+                <br>
+                <p>XXXXXXXXXXXX</p>
+                <div class="success-button-area flex">
+                    <a href="index.html">
+                        <div class="success-button button flex">
+                            <h1>Home</h1>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="success-button action-button flex">
+                            <h1>Library</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
+
 
     <footer>
         <div class="mobilefoot flex">
