@@ -22,9 +22,7 @@ a {color: inherit;}
     display: block;
     position: fixed;
 }
-#menu-toggle:checked +label {
-    position: fixed;
-}
+#menu-toggle:checked +label {position: fixed;}
 .menu-body {
     position: fixed;
     top: 5rem;
@@ -49,9 +47,7 @@ a {color: inherit;}
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
-#success-toggle:checked +label {
-    position: fixed;
-}
+#success-toggle:checked +label {position: fixed;}
 .success-body {
     min-height: 10rem;
     min-width: 15rem;
@@ -64,11 +60,12 @@ a {color: inherit;}
     justify-content: center;
     gap: 0.25rem;
 }
-.success-button {
+.buy-buttons {
     justify-content: center;
     align-items: center;
     height: 4rem;
     width: 10rem;
+    border-radius: 0.5rem;
 }
 
 .flex {display: flex;}
@@ -124,10 +121,7 @@ a {color: inherit;}
 }
 .bot-btn-active {color: var(--dark-color);}
 
-.button {
-    background-color: var(--bright-color);
-    border-radius: 0.5rem;
-}
+.button {background-color: var(--bright-color);}
 .button:hover {
     background-color: var(--active-color);
     cursor: pointer;
@@ -136,6 +130,7 @@ a {color: inherit;}
     background-color: var(--dark-color);
     color: var(--active-color);
     border-color: var(--active-color);
+    border-radius: 0.5rem;
 }
 
 
@@ -204,13 +199,10 @@ h1 {text-align: center;}
     padding-bottom: 5rem;
 }
 .action-button {
-    height: 4rem;
-    width: 10rem;
     background-color: var(--action-color);
     color: white;
     justify-content: center;
     align-items: center;
-    border-radius: 0.5rem;
 }
 .action-button:hover {
     background-color: var(--active-action-color);
@@ -235,9 +227,7 @@ h1 {text-align: center;}
 .input-full {width: 80%;}
 .input-half {width: 40%;}
 
-.contact-about {
-    padding: 5rem;
-}
+.contact-about {padding: 5rem;}
 
 
 @media (min-width: 40rem) {
